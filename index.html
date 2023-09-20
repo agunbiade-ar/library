@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project: Library</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/skeleton.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h3><a href="/">BookBrary</a></h3>
+        </div>
+        <ul>
+          <li>
+            <dialog>
+              <form>
+                <div class="row">
+                  <div class="twelve columns">
+                    <label for="title">Book Title</label>
+                    <input
+                      class="u-full-width"
+                      type="text"
+                      placeholder="Name of the book"
+                      name="book_title"
+                      id="book_title"
+                      required
+                    />
+                  </div>
+                  <div class="twelve columns">
+                    <label for="author">Author</label>
+                    <input
+                      class="u-full-width"
+                      type="text"
+                      placeholder="Who wrote the book"
+                      id="book_author"
+                      name="book_author"
+                      required
+                    />
+                  </div>
+                  <div class="twelve columns">
+                    <label for="title">Pages</label>
+                    <input
+                      class="u-full-width"
+                      type="number"
+                      placeholder="Number of pages the book contains"
+                      id="book_pages"
+                      name="book_pages"
+                      required
+                      min="5"
+                    />
+                  </div>
+                  <div class="twelve columns">
+                    <label class="example-send-yourself-copy" for="isRead">
+                      <input type="checkbox" id="isRead" />
+                      <span class="label-body">Have you read the book?</span>
+                    </label>
+                  </div>
+                </div>
+                <button formmethod="dialog" class="cancel" type="submit">
+                  Cancel
+                </button>
+                <button type="reset" class="reset-fields">Reset fields</button>
+                <button type="submit" class="submit">Submit</button>
+              </form>
+            </dialog>
+            <h5>
+              <a href="#" class="addBook">Add Book</a>
+            </h5>
+          </li>
+          <h5><a href="/allBooks.html">See all Books</a></h5>
+        </ul>
+      </nav>
+    </header>
+    <main class="cards-container"></main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

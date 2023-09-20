@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Inclusive+Sans&display=swap');
+
+nav {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: baseline;
+}
+
+nav > div {
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  /* color: black; */
+  font-family: 'Barlow', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: end;
+  margin-right: 15px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+}
+
+.card {
+  text-align: center;
+  margin: 4rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 200px;
+  font-family: 'Inclusive Sans', sans-serif;
+  background-color: #f3eef6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+h6 {
+  padding: 3px;
+}
+
+hr {
+  margin: 3px;
+}
+
+.title {
+  font-weight: 800;
+  font-family: 'Barlow', sans-serif;
+}
+
+.button-danger {
+  background-color: #d21404;
+  color: white;
+}
+
+dialog {
+  z-index: 1;
+  font-family: 'Barlow', sans-serif;
+  margin-top: 10rem;
+  background: #f3eef6;
+  border: none;
+  border-radius: 1rem;
+}
