@@ -16,7 +16,7 @@
         </div>
         <ul>
           <li>
-            <dialog>
+            <dialog class="dialog1">
               <form>
                 <div class="row">
                   <div class="twelve columns">
@@ -25,8 +25,8 @@
                       class="u-full-width"
                       type="text"
                       placeholder="Name of the book"
-                      name="book_title"
-                      id="book_title"
+                      name="title"
+                      id="title"
                       required
                     />
                   </div>
@@ -36,21 +36,21 @@
                       class="u-full-width"
                       type="text"
                       placeholder="Who wrote the book"
-                      id="book_author"
-                      name="book_author"
+                      id="author"
+                      name="author"
                       required
                     />
                   </div>
                   <div class="twelve columns">
-                    <label for="title">Pages</label>
+                    <label for="pages">Pages</label>
                     <input
                       class="u-full-width"
                       type="number"
                       placeholder="Number of pages the book contains"
-                      id="book_pages"
-                      name="book_pages"
-                      required
+                      id="pages"
+                      name="pages"
                       min="5"
+                      required
                     />
                   </div>
                   <div class="twelve columns">
@@ -60,20 +60,24 @@
                     </label>
                   </div>
                 </div>
-                <button formmethod="dialog" class="cancel" type="submit">
-                  Cancel
-                </button>
+                <button formmethod="dialog" class="cancel">Cancel</button>
                 <button type="reset" class="reset-fields">Reset fields</button>
-                <button type="submit" class="submit">Submit</button>
+                <button type="submit" class="dialog1-submit">Submit</button>
               </form>
             </dialog>
             <h5>
               <a href="#" class="addBook">Add Book</a>
             </h5>
           </li>
-          <h5><a href="/allBooks.html">See all Books</a></h5>
+          <!-- <h5>
+            <a href="#" class="see-all-books">See all Books</a>
+          </h5> -->
         </ul>
       </nav>
+      <!-- <div class="container">
+        <label for="search">Search for a book</label>
+        <input type="search" class="u-full-width" name="search" id="search" />
+      </div> -->
     </header>
     <main class="cards-container"></main>
     <footer></footer>
